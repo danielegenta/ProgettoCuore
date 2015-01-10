@@ -1,0 +1,26 @@
+#mod_map { display: block; width: 100%; color: #333; position: relative; -webkit-perspective: 1700px; -ms-perspective: 1700px; perspective: 1700px; -webkit-perspective-origin: 0 50%; -ms-perspective-origin: 0 50%; perspective-origin: 0 50%; }
+#mod_map #mod_map h3 { display: inline; }
+#mod_map button { -webkit-appearance: none; background: #ddd; border: none; }
+#mod_map button:hover, #mod_map button:active, #mod_map button:focus { background: #bbb; }
+#mod_map figure { margin: 20px 0 0 0; width: 100%; position: relative; -webkit-transform-style: preserve-3d; -ms-transform-style: preserve-3d; transform-style: preserve-3d; }
+#mod_map figure > div { overflow: hidden; }
+#mod_map figure #mod_mapMap { display: block; height: 400px; z-index: 1; max-width: 100%; position: relative; -webkit-transition: all 0.4s; transition: all 0.4s; }
+#mod_map figure #mod_mapMap img { max-width: none; }
+#mod_map figure.left-open #mod_mapMap { left: 50%; width: 50%; }
+#mod_map figure.right-open #mod_mapMap { left: 0; width: 50%; }
+#mod_map figure figcaption { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: absolute; top: 0; z-index: 5; left: 0; padding: 20px; background: #333; color: white; font-size: 0.875em; height: 100%; width: 100%; opacity: 0; -webkit-backface-visibility: hidden; -ms-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: rotateY(-90deg); -ms-transform: rotateY(-90deg); transform: rotateY(-90deg); -webkit-transition: -webkit-transform 0.4s, opacity 0.3s; transition: transform 0.4s, opacity 0.3s; }
+#mod_map figure figcaption .infobox { display: block; margin-bottom: 0.5em; }
+#mod_map figure figcaption .infobox .infoTitle { margin-bottom: 0.1em; color: #ccc; }
+#mod_map figure figcaption .infobox .inforMation { margin-bottom: 0; }
+#mod_map figure figcaption.open { opacity: 1; -webkit-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); -webkit-transition: -webkit-transform 0.4s, opacity 0.1s; transition: transform 0.4s, opacity 0.1s; }
+#mod_map figure #right-pane { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; position: absolute; top: 0; z-index: 5; right: 0; padding: 20px; background: #333; color: white; font-size: 0.875em; height: 100%; width: 100%; opacity: 0; -webkit-backface-visibility: hidden; -ms-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform-origin: right center; -ms-transform-origin: right center; transform-origin: right center; -webkit-transform: rotateY(90deg); -ms-transform: rotateY(90deg); transform: rotateY(90deg); -webkit-transition: -webkit-transform 0.4s, opacity 0.3s; transition: transform 0.4s, opacity 0.3s; }
+#mod_map figure #right-pane button { width: 49%; display: inline-block; margin-bottom: 0.2em; }
+#mod_map figure #right-pane #direction-output { overflow-y: scroll; background: #fff; height: 80%; margin-top: 2%; padding: 1em; z-index: 5; }
+#mod_map figure #right-pane #direction-output .adp-text { padding: 0.5em; }
+#mod_map figure #right-pane #direction-output img { max-width: none; margin-right: 0.5em; margin-left: 0.5em; }
+#mod_map figure #right-pane.open { opacity: 1; -webkit-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); -webkit-transition: -webkit-transform 0.4s, opacity 0.1s; transition: transform 0.4s, opacity 0.1s; }
+
+@media only screen and (min-width: 35em) { #mod_map figure figcaption { width: 50%; }
+  #mod_map figure #right-pane { width: 50%; } }
+@media only screen and (min-width: 37.5em) { #mod_map figure figcaption { font-size: 1em; }
+  #mod_map figure figcaption .infobox .infoTitle { margin-bottom: 0; } }
